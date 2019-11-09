@@ -1,10 +1,13 @@
 package java8.optional;
 
 import java.util.Optional;
+import java.util.function.Consumer;
 
 /**
  * Optional类的引入很好的解决空指针异常
  * @see java.util.Optional
+ *
+ * 可以与函数表达式联合使用
  */
 public class OptionalTest
 {
@@ -20,6 +23,9 @@ public class OptionalTest
         // Optional.of - 如果传递的参数是null，抛出异常NullPointerException
         Optional<Integer> b = Optional.of(value2);
         System.out.println(optionalTest.sum(a,b));
+
+        Consumer<Integer> consumer = x -> System.out.println(Math.sqrt(x));
+        b.ifPresent(consumer);
     }
 
     public Integer sum(Optional<Integer> a, Optional<Integer> b)
