@@ -8,7 +8,6 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 /**
- *
  * 方法引用是为了进一步简化lambda表达式
  *
  * 构造器引用：Class::new，或者更一般的Class<T>::new
@@ -22,7 +21,6 @@ import java.util.stream.Collectors;
  * 超类上的实例方法引用：supper::method
  *
  * 数组构造方法引用：TypeName[]::new
- *
  */
 public class MethodReferenceTest
 {

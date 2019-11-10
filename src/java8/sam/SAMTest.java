@@ -8,7 +8,6 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- *
  * 函数式接口：是抽象方法只有一个的接口
  * @see FunctionalInterface
  * @see java.util.function

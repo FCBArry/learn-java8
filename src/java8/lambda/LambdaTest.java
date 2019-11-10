@@ -1,7 +1,6 @@
 package java8.lambda;
 
 /**
- *
  * Lambda表达式，也可称为闭包
  * 使用Lambda表达式可以使代码变的更加简洁紧凑
  *
@@ -18,7 +17,6 @@ package java8.lambda;
  * 不能在lambda内部修改定义在域外的局部变量
  * Lambda表达式的局部变量可以不用声明为final，但是必须不可被后面的代码修改（即隐性的具有final的语义）
  * 在Lambda表达式当中不允许声明一个与局部变量同名的参数或者局部变量
- *
  */
 public class LambdaTest
 {
